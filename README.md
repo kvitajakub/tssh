@@ -13,5 +13,6 @@ You can actually add hosts in `user@IP` and disable pane synchronization with `C
 ## Installation
 Copy executable to `/usr/local/bin` and autocomplete script to `/usr/share/bash-completion/completions`
 ```bash
-
+wget -O /usr/local/bin/tssh  https://raw.githubusercontent.com/kvitajakub/tssh/master/tssh
+wget -O /usr/share/bash-completion/completions/tssh  https://raw.githubusercontent.com/kvitajakub/tssh/master/tssh-autocomplete
 ```
