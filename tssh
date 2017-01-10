@@ -1,0 +1,14 @@
+#!/bin/sh
+# get hosts
+host=("$@")
+# start session and 1st connection
+tmux -2 new-session -d -s "tssh" "ssh ${host[0]}"
+
+for (( i=1 ; i < ${#host[@]} ; i++))
+do
+  tmux splitw -t "tssh" "ssh ${host[$i]}"
+done
+
+tmux select-layout tiled
+tmux set-window-option synchronize-panes on
+tmux attach -t "tssh"
