@@ -10,12 +10,12 @@ Where hostnames are from ~/.ssh/config.
 
 You can actually add hosts in `user@IP` and disable pane synchronization with `C+b :setw synchronize-panes off`.
 
-### Example
+### Autocomplete example
 ```shell
 [jkvita@galahad tssh] $ tssh
 bastion-production  flynn-dev1          flynn-dev3          flynn-prod-backup2  flynn-prod-backup4  nginx-prod-east2    nginx-prod-west2    nginx-staging2      
 bastion-staging     flynn-dev2          flynn-prod-backup1  flynn-prod-backup3  nginx-prod-east1    nginx-prod-wes1     nginx-staging1      
-[jkvita@galahad tssh] $ tssh 
+[jkvita@galahad tssh] $ tssh
 ```
 
 ## Installation
